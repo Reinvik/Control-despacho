@@ -7,17 +7,15 @@ import {
   TableContainer, 
   TableHead, 
   TableRow, 
-  Paper, 
-  Switch,
+  Paper,
   TextField,
   Button,
   Box,
   Typography
 } from '@mui/material';
-// Importaciones no utilizadas removidas
 import io from 'socket.io-client';
 
-const socket = io('http://localhost:5000');
+const socket = io(process.env.REACT_APP_API_URL || 'http://localhost:5000');
 
 function App() {
   const [zonals, setZonals] = useState([]);
