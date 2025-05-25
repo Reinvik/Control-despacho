@@ -11,7 +11,8 @@ import {
   TextField,
   Button,
   Box,
-  Typography
+  Typography,
+  Switch
 } from '@mui/material';
 import io from 'socket.io-client';
 
