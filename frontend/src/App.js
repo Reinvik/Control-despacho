@@ -14,7 +14,7 @@ import {
   Box,
   Typography
 } from '@mui/material';
-import { Check, Close } from '@mui/icons-material';
+// Importaciones no utilizadas removidas
 import io from 'socket.io-client';
 
 const socket = io('http://localhost:5000');
